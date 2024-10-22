@@ -1,0 +1,32 @@
+{
+  "name": "local-services-marketplace",
+  "version": "1.0.0",
+  "description": "Local Services Marketplace MVP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "local",
+    "services",
+    "marketplace"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "dotenv": "^10.0.0",
+    "stripe": "^8.184.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14",
+    "concurrently": "^6.3.0"
+  }
+}
